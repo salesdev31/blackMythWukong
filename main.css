@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(#121715, #29201b);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-family: "The Girl Next Door", cursive;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px rgba(238, 238, 238, 0.577);
+    color: #e8ebea;
+    position: relative;
+}
+
+.header h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 8px;
+    width: 30px;
+    background-color: #d15d2f;
+    
+}
+
+.header h1 span {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+}
+
+/*Lista do Menu*/
+
+.header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.header ul a {
+    text-decoration: none;
+    color: #e8ebea;
+}
+
+/*main*/
+
+main {
+    padding: 50px 0;
+    height: calc(100vh - 80px);
+    background-image: url('images/bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right; 
+}
+
+section .history {
+    background-image: linear-gradient(45deg, #989ea18d , #29201b);
+    width: max-content;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px 5px #ffffff28;
+}
+.first-class h2 {
+    font-size: 2rem;
+    color: #e8ebea;
+    letter-spacing: 1.5px;
+}
+
+.first-class p {
+    width: 60ch;
+    margin-top: 20px;
+    color: #e8ebea;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-indent: 30px;
+    position: relative;
+}
+
+
+.first-class p::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 8px;
+    width: 20px;
+    top: 5px;
+    background-color: #d15d2f;
+}
+
+.line {
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+    width: 95%;
+    background-color: #e8ebea6b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.plataformas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plataformas img {
+    display: block;
+    height: 80px;
+}
+
+
+/*Segunda section - sobre*/
+
+.second-class {
+    background-color: #121314;
+    padding-bottom: 50px;
+}
+.second-class h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    font-size: 3rem;
+    color: #e6e6e6;
+    font-weight: 300;
+}
+
+.second-class ul {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.second-class ul img {
+    height: 350px;   
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.second-class ul img:hover {
+    transform: scale(1.05, 1.05);
+    transition: .3s;
+}
+
+.second-class figcaption {
+    color: #e6e6e6;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.second-class p {
+    text-align: center;
+    color: #e6e6e6;
+    margin-top: 20px;
+    font-size: .8rem;
+}
+
+/*section de valores*/
+
+.thirt-section {
+    background-color: #e8ebea;
+    padding-bottom: 50px;
+}
+
+.thirt-section img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.thirt-section ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.thirt-section h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 40px;
+}
+
+.thirt-section ul li {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #121715;
+}
+
+.thirt-section h3 {
+    text-align: center;
+    color: #e6e6e6;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+
+.thirt-section button {
+    display: block;
+    border: none;
+    width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.thirt-section button:hover {
+    background-color: #d15d2f;
+    transition: .3s;
+}
+
+.thirt-section ul li:hover {
+    box-shadow: 0px 0px 30px 10px black;
+    transition: .5s;
+}
+
+
+/*Quarta section - Contato*/
+
+.four-section {
+    background-color: #243309;
+    padding-bottom: 50px;
+}
+
+.four-section h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: #e6e6e6;
+}
+
+form {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
+
+input, textarea {
+    display: block;
+    width: 450px;
+    padding: 20px;
+    margin-bottom: 20px;
+    outline-color: #d15d2f;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.587);
+}
+
+.four-section .btn {
+    margin-top: 60px;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+
+footer {
+    background-color: #121314;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+footer img {
+    height: 150px;
+}
+
+footer h3 {
+    color: #e8ebea;
+    font-size: 2rem;
+}
